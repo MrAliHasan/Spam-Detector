@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spam Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .prediction-result {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        p {
+            color: #333;
+            font-size: 18px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .prediction {
+            font-weight: bold;
+            color: #4CAF50;
+            font-size: 24px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .prediction.spam {
+            color: #F44336;
+        }
+    </style>
+</head>
+<body>
+    <h1>Spam Prediction Result</h1>
+    <div class="prediction-result">
+        <p>Your message has been analyzed.</p>
+        <p>The prediction result is:</p>
+        <p class="prediction {% if prediction == 'spam' %}spam{% endif %}">{{ prediction }}</p>
+    </div>
+</body>
+</html>
+</title>
+</head>
+<body>
+
+</body>
+</html>
